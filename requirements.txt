@@ -1,4 +1,5 @@
 pip install dbt
+pip install dbt-core
 pip install dbt-snowflake
 pip install airflow
 pip install apache-airflow-providers-snowflake

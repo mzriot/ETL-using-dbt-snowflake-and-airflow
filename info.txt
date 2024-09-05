@@ -25,3 +25,15 @@ drop role if already exists dbt_role;
 ****
 
 
+Terminal - commands
+
+dbt init
+- select snowflake
+-- fill all essential details and refer above warehouse, database and role.
+ 
+ open file in vscode and we start editing the yml file
+ 
+
+
+
+
