@@ -10,3 +10,18 @@ show grants on warehouse dbt_wh;
 grant usage on warehouse dbt_wh to role dbt_role;
 grant role dbt_role to user aman7;
 grant all on database dbt_db to role dbt_role;
+
+use role dbt_role;
+create schema dbt_db.dbt_schema;
+
+**** 
+"if warehouse already exists we can use these commands to get rid of them and then we can rerun the above codes"
+
+use role accountadmin;
+drop warehouse if already exists dbt_wh;
+drop database if already exists dbt_db;
+drop role if already exists dbt_role;
+
+****
+
+
