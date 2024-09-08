@@ -31,8 +31,10 @@ dbt init
 - select snowflake
 -- fill all essential details and refer above warehouse, database and role.
  
- open file in vscode and we start editing the yml file
+ open file in vscode and we start editing the yml file.
+
  
+
 
 
 
