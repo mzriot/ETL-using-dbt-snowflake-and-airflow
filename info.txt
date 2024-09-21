@@ -33,7 +33,26 @@ dbt init
  
  open file in vscode and we start editing the yml file.
 
- 
+in the yaml file we will be adding two tables:\
+
+models:
+  ELT_PIPELINE:
+    # Config indicated by + and applies to all files under models/example/
+    staging:
+      +materialized: view
+      snowflake_warehouse: dbt_wh
+    marts:
+      +materialized: table
+      snowflake_warehouse: dbt_wh 
+      
+and then we create two folders with the name staging and marts under the model folders
+
+we will create a yaml file named packages and follow the code:
+
+packages:
+ -package: dbt-labs/dbt-utils
+  version: 1.3.0
+
 
 
 
